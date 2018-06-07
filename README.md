@@ -1,30 +1,30 @@
-# aws_lambda_in_motion_golang
+# Production Ready Serverless in GoLang
 
-Examples from [AWS Lambda in Motion](https://www.manning.com/livevideo/production-ready-serverless) (renamed recently to `Production-Ready Serverless`), made in Golang (Video Course is based on Node.js)
+Examples from [Production Ready Serverless](https://www.manning.com/livevideo/production-ready-serverless), made in Golang (Video Course is based on Node.js)
 
 ## Setup
 
 ```shell
 [~]$ cd $GOPATH/src/github.com/andrzejsliwa
-[~/go/src/github.com/andrzejsliwa]$ git clone git@github.com:andrzejsliwa/aws_lambda_in_motion_golang.git
-Cloning into 'aws_lambda_in_motion_golang'...
+[~/go/src/github.com/andrzejsliwa]$ git clone git@github.com:andrzejsliwa/production_ready_serverless_in_golang.git
+Cloning into 'production_ready_serverless_in_golang'...
 remote: Counting objects: 10, done.
 remote: Compressing objects: 100% (9/9), done.
 remote: Total 10 (delta 0), reused 10 (delta 0), pack-reused 0
 Receiving objects: 100% (10/10), done.
-[~/go/src/github.com/andrzejsliwa]$ cd aws_lambda_in_motion_golang
-[master][~/go/src/github.com/andrzejsliwa/aws_lambda_in_motion_golang]$
+[~/go/src/github.com/andrzejsliwa]$ cd production_ready_serverless_in_golang
+[master][~/go/src/github.com/andrzejsliwa/production_ready_serverless_in_golang]$
 ```
 
 ## Deployment
 
 ```shell
-[master][~/go/src/github.com/andrzejsliwa/aws_lambda_in_motion_golang]$ cd aws_lambda_in_motion_golang
-[master][~/go/src/github.com/andrzejsliwa/aws_lambda_in_motion_golang/hello_manning]$ make
+[master][~/go/src/github.com/andrzejsliwa/production_ready_serverless_in_golang]$ cd production_ready_serverless_in_golang
+[master][~/go/src/github.com/andrzejsliwa/production_ready_serverless_in_golang/hello_manning]$ make
 dep ensure
 env GOOS=linux go build -ldflags="-s -w" -o bin/hello hello/main.go
 
-[master][~/go/src/github.com/andrzejsliwa/aws_lambda_in_motion_golang/hello_manning]$ sls deploy
+[master][~/go/src/github.com/andrzejsliwa/production_ready_serverless_in_golang/hello_manning]$ sls deploy
 Serverless: Packaging service...
 Serverless: Excluding development dependencies...
 Serverless: Uploading CloudFormation file to S3...
