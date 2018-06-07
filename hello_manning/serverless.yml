@@ -22,6 +22,9 @@ provider:
   region: us-west-1 # added to run on specific region, optional: defaults to us-east-1
   stage: dev        # optional: defaults to dev
   runtime: go1.x
+  # Defaults values...
+  # timeout: 3  # in seconds
+  # memory: 256 # in MB
 
 # you can overwrite defaults here
 #  stage: dev
