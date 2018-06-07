@@ -1,6 +1,6 @@
 # aws_lambda_in_motion_golang
 
-Examples from [AWS Lambda in Motion](https://www.manning.com/livevideo/production-ready-serverless), made in Golang (Video Course is based on Node.js)
+Examples from [AWS Lambda in Motion](https://www.manning.com/livevideo/production-ready-serverless) (renamed recently to `Production-Ready Serverless`), made in Golang (Video Course is based on Node.js)
 
 ## Setup
 
