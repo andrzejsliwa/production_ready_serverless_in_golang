@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: API Gateway Lambda for Go
+
+Globals:
+  Function:
+    Timeout: 300
+    Environment:
+      Variables:
+        AWS_DYNAMODB_ENDPOINT:
+
+Parameters:
+  targetStage:
+    Description: Define stage to which Lambdas/API Gateways should be deployed.
+    Type: String
+    Default: dev
+    AllowedValues:
+      - dev
+      - prod
+    ConstraintDescription: Only stages dev and prod are allowed
+  AWS_DYNAMODB_ENDPOINT:
+    Type: String
+
+Resources:
+  GetTables:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub "getTables-${targetStage}"
+      Handler: main
+      Runtime: go1.x
+      CodeUri: ./bin
+      Events:
+        Home:
+          Type: Api
+          Properties:
+            Path: /
+            Method: any
