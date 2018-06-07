@@ -53,5 +53,5 @@ functions:
 Open endpoint (from your console output, not from this file)
 Example:
 ```shell
-[master][~/go/src/github.com/andrzejsliwa/aws_lambda_in_motion_golang/hello_manning]$ open https://*********.execute-api.us-west-1.amazonaws.com/dev/
+$ open https://*********.execute-api.us-west-1.amazonaws.com/dev/
 ```
