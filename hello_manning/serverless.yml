@@ -19,7 +19,8 @@ service: hello-manning
 
 provider:
   name: aws
-  region: us-west-1
+  region: us-west-1 # added to run on specific region, optional: defaults to us-east-1
+  stage: dev        # optional: defaults to dev
   runtime: go1.x
 
 # you can overwrite defaults here
