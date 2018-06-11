@@ -60,6 +60,7 @@ $ open https://*********.execute-api.us-west-1.amazonaws.com/dev/
 
 - hello_manning - simple api-gateway example with golang and serverless
 - sam_local_with_localstack_and_dynamodb - simple example with using localstack and running on AWS SAM Local (with example test with mocking dynamodb) 
+- big_mouth - simple example how to render static html via api-gateway (as proof of concept for tutorial, for production I would consider using S3 build with CloudFront)
 
 ## Notes
 
@@ -67,3 +68,4 @@ $ open https://*********.execute-api.us-west-1.amazonaws.com/dev/
 - Currently Serverless is not supporting invoke on local for Golang (you can make it with `AWS SAM Local`)
 - AWS Sam Local is running locally lambdas in docker images which are close to production in behaviour
 - Together with AWS SAM Local you are able to run LocalStack to emulate resources locally
+
